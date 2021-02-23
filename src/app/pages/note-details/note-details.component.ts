@@ -16,8 +16,8 @@ export class NoteDetailsComponent implements OnInit {
   new: boolean;
 
   constructor(private notesService: NotesService,
-     private router: Router,
-     private route:ActivatedRoute) { }
+              private router: Router,
+              private route:ActivatedRoute) { }
 
   ngOnInit(): void {
 
@@ -42,7 +42,7 @@ export class NoteDetailsComponent implements OnInit {
       this.notesService.update(this.noteId, form.value.title, form.value.body);
       this.router.navigateByUrl('/');
     }
-    
+
   }
 
   cancel(){
